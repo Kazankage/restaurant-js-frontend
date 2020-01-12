@@ -1,0 +1,43 @@
+body {
+    font-family: 'Helvetica', 'sans-serif' ;
+    font-weight: 300;
+    line-height: 1.6em;
+    font-size: 1.3em;
+}
+
+
+a { 
+    color: #d32323
+}
+
+input {
+    font-size: 1.5em;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
+.delete-city-link{
+    color: blue;
+}
+
+
+#editable{
+    border: 1px solid black;
+    padding: 20px
+}
+
+#citys-contents{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
