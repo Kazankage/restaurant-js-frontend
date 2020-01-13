@@ -10,6 +10,7 @@ class RestaurantsAdapter {
         const restaurant = {
             body: value,
         }
+        debugger
         return fetch(this.baseUrl, {
             method: 'POST',
             body: JSON.stringify({restaurant}),
