@@ -10,10 +10,10 @@ class Restaurants {
         this.restaurantContainer = document.getElementById('restaurant-container')
         this.newRestaurantBody = document.getElementById('new-restaurant-body')
         this.restaurantForm = document.getElementById('new-restaurant-form')
-        this.restaurantForm.addEventListener('submit', this.createNote.bind(this))
+        this.restaurantForm.addEventListener('submit', this.createRestaurant.bind(this))
     }
 
-    createNote(x) {
+    createRestaurant(x) {
         x.preventDefault() 
         const value = this.newRestaurantBody.value
         this.adapter.createRestaurant(value)

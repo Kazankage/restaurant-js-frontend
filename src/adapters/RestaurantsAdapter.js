@@ -8,12 +8,12 @@ class RestaurantsAdapter {
 
     createRestaurant() {
         const restaurant = {
-            body: value,
+            body: this.newRestaurantBody.value,
         }
         
         return fetch(this.baseUrl, {
             method: 'POST',
-            body: JSON.stringify({restaurant}),
+            body: JSON.stringify({restaurant: restaurant}),
         })
     }
 }
