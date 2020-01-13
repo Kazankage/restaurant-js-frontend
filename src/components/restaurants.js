@@ -16,7 +16,7 @@ class Restaurants {
         .getRestaurants()
         .then(restaurants => { 
         
-            restaurants.forEach(restaurant => this.restaurants.push(restaurant))
+            restaurants.forEach(restaurant => this.restaurants.push(restaurant))//new Restaurant(restaurant)))
             
         })
             .then(() => {
@@ -26,8 +26,7 @@ class Restaurants {
 
     render(){ 
     
-       
-        this.restaurantContainer.innerHTML = this.restaurants.map(restaurant => `<li>${restaurant.body}</li>`).join('')
+        this.restaurantContainer.innerHTML = this.restaurants.map(restaurant => `<li>${restaurant.body}</li>`).join('') // restaurant.renderList()
      
         
 }

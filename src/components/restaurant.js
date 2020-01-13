@@ -3,4 +3,8 @@ class Restaurant {
         this.id = restaurantJSON.id
         this.body = restaurantJSON.body
     }   
+
+    renderList() {
+        return `<li>${this.body}</li>`
+    }
 }
