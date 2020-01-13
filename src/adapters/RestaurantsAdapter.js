@@ -5,6 +5,16 @@ class RestaurantsAdapter {
     getRestaurants() {
         return fetch(this.baseUrl).then(res => res.json())
     }
+
+    createRestaurant() {
+        const restaurant = {
+            body: value
+        }
+        retrun fetch(this.baseUrl).{
+            method: 'POST'
+            body: JSON.stringify({restaurant})
+        }
+    }
 }
 
 
