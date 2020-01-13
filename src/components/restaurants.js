@@ -15,7 +15,7 @@ class Restaurants {
 
     createNote(x) {
         x.preventDefault()
-        const value = this.newRestaurantBody.value)
+        const value = this.newRestaurantBody.value
 
         this.adapter.createRestaurant(value)
     }
