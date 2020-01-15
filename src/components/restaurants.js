@@ -13,10 +13,15 @@ class Restaurants {
         this.restaurantForm.addEventListener('submit', this.createRestaurant.bind(this))
     }
 
-    createRestaurant(x) {
-        x.preventDefault() 
+    createRestaurant(e) {
+        e.preventDefault() 
         const value = this.newRestaurantBody.value
-        this.adapter.createRestaurant(value)
+
+        this.adapter.createRestaurant(value).then(restaurant => {
+            this.restaurants.push(restaurant)
+            this.newRestaurantBody.value = ''
+            this.render()
+        })
     }
 
     fetchRestaurants() {  
