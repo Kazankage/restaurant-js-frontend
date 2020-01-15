@@ -30,12 +30,12 @@ ul {
 }
 
 
-#editable{
+.editable{
     border: 1px solid black;
     padding: 20px
 }
 
-#citys-contents{
+.citys-contents{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;

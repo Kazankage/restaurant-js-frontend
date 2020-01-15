@@ -19,6 +19,19 @@ class RestaurantsAdapter {
             body: JSON.stringify({restaurant}),
         }).then(res => res.json())
     }
+
+    updateValue(value, id){
+        const restaurant = {
+            body: value,
+        }
+        return fetch(`${this.baseUrl}/${id}`, {
+            method: 'PATCH',
+            headers: {
+              'content-type': 'application/json',
+            },
+            body: JSON.stringify({restaurant}),
+        }).then(res => res.json())
+    }
 }
 
 
